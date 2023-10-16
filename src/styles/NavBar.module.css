@@ -1,0 +1,52 @@
+.nav {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  box-sizing: content-box;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: aliceblue;
+  padding: 1.5rem 4rem 0px;
+  height: 55px;
+}
+
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 28px;
+
+}
+.nav ul li:first-child a img{
+  height: 50px;
+  margin-right: 10px;
+}
+
+.nav ul li {
+  color: black;
+  font-size: 18px;
+  position: relative;
+}
+
+.nav ul li::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #ff89f9;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav ul li:hover::after {
+  width: 100%; 
+  left: 0;
+}
