@@ -1,10 +1,21 @@
+import Head from "next/head";
+import NavBar from '../components/navbar'
 import Layout from '../components/layout'
+import Footer from '../components/footer'
 import '../styles/globals.css'
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WebJam 2023</title>
+      </Head>
+      <NavBar />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+      <Footer />
+    </>
   )
 }

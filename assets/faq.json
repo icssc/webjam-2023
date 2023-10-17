@@ -1,0 +1,50 @@
+[
+  {
+    "title": "What is WebJam?",
+    "content": "WebJam is a week-long team competition where teams of students will create fully functional web applications."
+  },
+  {
+    "title": "Where is WebJam being held?",
+    "content": "WebJam is being held in an in-person environment, consisting of events/workshops and ceremonies. Correspondence and announcements will happen primarily through the WebJam Discord; registered participants will receive an invitation to the Discord closer to the start of WebJam."
+  },
+  {
+    "title": "When is WebJam? (Update me)",
+    "content": "Week 7"
+  },
+  {
+    "title": "How much does it cost?",
+    "content": "Nothing. Attending WebJam is free."
+  },
+  {
+    "title": "Who can participate?",
+    "content": "All UC Irvine students are welcome to participate."
+  },
+  {
+    "title": "How many people can be on a team?",
+    "content": "Teams can be up to a maximum of 4 people."
+  },
+  {
+    "title": "What if I don’t have a team?",
+    "content": "We will be assisting with team formations during the event by creating a Discord channel for team formations. Also, we plan to have a social after our kickoff ceremony for students to find potential teammates!"
+  },
+  {
+    "title": "How do I register?",
+    "content": "You can register by filling out the following RSVP form above."
+  },
+  {
+    "title": "May I submit pre-existing projects for WebJam?",
+    "content": "All design elements and code for your project must be created during the event. Pre-existing third party tools and frameworks are allowed. Coding in advance is not allowed, but planning and discussing with teammates prior to the event is allowed."
+  },
+  {
+    "title": "What if I lack web dev experience?",
+    "content": "Many ICS clubs will be hosting workshops throughout the week to assist participants get started with web development."
+  },
+  {
+    "title": "What if my question isn’t answered here?",
+    "content": "If your question isn’t answered in the FAQ, please leave a question in the WebJam Discord or email us at icssc@uci.edu."
+  },
+  {
+    "title": "What are the rules?",
+    "content": "Please refer to the WebJam Rules and Code of Conduct for more information."
+  }
+]

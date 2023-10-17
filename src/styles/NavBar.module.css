@@ -6,9 +6,11 @@
   top: 0;
   z-index: 1;
   width: 100%;
-  background-color: aliceblue;
+  color: white;
+  background-color: transparent;
   padding: 1.5rem 4rem 0px;
   height: 55px;
+  transition: opacity 400ms ease;
 }
 
 
@@ -22,14 +24,14 @@
   gap: 28px;
 
 }
-.nav ul li:first-child a img{
+.nav ul:first-child a img{
   height: 50px;
   margin-right: 10px;
 }
 
 .nav ul li {
-  color: black;
   font-size: 18px;
+  font-weight: 600;
   position: relative;
 }
 
@@ -38,10 +40,10 @@
   bottom: 0;
   content: "";
   display: block;
-  height: 2px;
+  height: 3px;
   left: 50%;
   position: absolute;
-  background: #ff89f9;
+  background: #ff87a6;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
