@@ -37,7 +37,7 @@ const MEDIA_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="w-[100%] flex flex-col gap-5 p-6 mt-10">
+    <footer className="w-[100%] flex flex-col gap-5 p-6 sm:p-10">
       <div className="flex justify-center gap-5 sm:gap-12 text-3xl sm:text-4xl">
         {MEDIA_LINKS.map((link) => (
           <Link
