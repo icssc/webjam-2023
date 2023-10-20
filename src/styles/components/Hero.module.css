@@ -5,10 +5,11 @@
 
 }
 
-.heroContainer h1 {
-    font-size: 4rem;
-    line-height: 4rem;
-    margin-bottom: 0.8rem;
+.heroContainer span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 0.8rem;
 }
 
 .heroContainer h2 {

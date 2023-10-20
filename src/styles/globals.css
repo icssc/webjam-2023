@@ -10,10 +10,11 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: 'freude', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 body {
-  font-family: 'freude', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
   color: white;
   background: linear-gradient(0deg, #182848, #115b7e);
 }

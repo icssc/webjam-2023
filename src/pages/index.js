@@ -9,7 +9,8 @@ export default function Home() {
         className="flex
         flex-col
         md:flex-row
-        md:mx-[4rem]
+        md:ml-[4rem]
+        md:mr-[2rem]
         md:place-content-end 
         place-content-center
         min-h-[calc(100vh-110px)]
