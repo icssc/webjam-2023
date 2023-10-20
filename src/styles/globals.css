@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'freude';
+  src: url('/fonts/Freude.otf');
+ }
+
+
 html {
   scroll-behavior: smooth;
+  font-family: 'freude', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 body {
