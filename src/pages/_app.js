@@ -1,9 +1,8 @@
 import Head from "next/head";
-import NavBar from '../components/navbar'
-import Layout from '../components/layout'
-import Footer from '../components/footer'
-import 'material-icons/iconfont/material-icons.css';
-import '../styles/globals.css'
+import NavBar from "../components/navbar";
+import Layout from "../components/layout";
+import Footer from "../components/footer";
+import "../styles/globals.css";
 
 export default function MyApp({ Component, pageProps }) {
   return (
@@ -18,5 +17,5 @@ export default function MyApp({ Component, pageProps }) {
       </Layout>
       <Footer />
     </>
-  )
+  );
 }
