@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import styles from '../styles/NavBar.module.css'
+import React, { useState, useEffect } from "react";
+import styles from "../styles/NavBar.module.css";
 
 export default function Navbar() {
   const [showNav, setShowNav] = useState(true);
@@ -14,22 +14,26 @@ export default function Navbar() {
       prevScrollPos = currentScrollPos;
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <nav className={`${styles.nav} ${showNav ? 'opacity-100' : 'opacity-0'}`}>
+    <nav className={`${styles.nav} ${showNav ? "opacity-100" : "opacity-0"}`}>
       <ul>
         <a href="/">
-          <img src="/logo.svg" alt="ICSSC Logo"/>
+          <img src="/logo.svg" alt="ICSSC Logo" />
         </a>
-        <li><a href="#">About</a></li>
-        <li><a href="#faq">FAQ</a></li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#faq">FAQ</a>
+        </li>
       </ul>
     </nav>
-  )
+  );
 }
