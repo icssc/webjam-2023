@@ -15,7 +15,7 @@ export default function Home() {
       <section id="about" className="flex place-content-center">
         <AboutSection />
       </section>
-      <section id="events" className="flex place-content-center">
+      <section id="events" className="flex">
         <EventsSection />
       </section>
       <section id="faq" className="flex place-content-center">
