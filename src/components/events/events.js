@@ -61,7 +61,7 @@ export default function EventsSection() {
                   key={event.title + event.time}
                 >
                   <div className="flex gap-6">
-                    <div className="hidden md:flex items-center h-32 w-32">
+                    <div className="hidden md:flex items-center h-32 w-32 my-auto">
                       <img
                         src={event.logo}
                         alt="Club Logo"
