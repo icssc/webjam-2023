@@ -32,11 +32,9 @@ export default function EventsSection() {
   const schedule = EventsData.schedule;
   const sortedSchedule = getSortedSchedule(schedule);
 
-  console.log(sortedSchedule);
-
   return (
     <>
-      <div className="flex flex-col mx-8 md:mx-24 my-10 gap-2 md:gap-4">
+      <div className="flex flex-col mx-8 md:mx-24 lg:mx-36 xl:mx-48 my-10 gap-2 md:gap-4">
         <div className="flex place-content-start text-5xl md:text-6xl">
           Schedule
         </div>
@@ -71,7 +69,7 @@ export default function EventsSection() {
 
                     <div className="flex flex-col gap-4">
                       <div>
-                        <div className="flex text-3xl md:text-4xl text-white md:w-[32rem] lg:w-[20rem] xl:w-[32rem]">
+                        <div className="flex text-3xl md:text-4xl text-white md:w-[28rem] lg:w-[20rem] xl:w-[28rem]">
                           {event.title}
                         </div>
                         <div className="text-lg md:text-xl">
