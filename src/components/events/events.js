@@ -60,8 +60,8 @@ export default function EventsSection() {
                   className="flex flex-col lg:flex-row border-gray-400 border-t-4 border-dashed w-[100%] py-4 lg:items-center lg:justify-between gap-6 lg:gap-0"
                   key={event.title + event.time}
                 >
-                  <div className="flex gap-6">
-                    <div className="hidden md:flex items-center h-32 w-32 my-auto">
+                  <div className="flex gap-6 lg:h-[100%] align-top items-start">
+                    <div className="hidden md:flex items-center h-32 w-32">
                       <img
                         src={event.logo}
                         alt="Club Logo"
@@ -108,7 +108,7 @@ export default function EventsSection() {
                       </div>
                     </div>
                   </div>
-                  <div className="lg:w-[40%] lg:h-32 overflow-y-auto text-base md:text-xl flex align-top items-start">
+                  <div className="lg:w-[40%] lg:min-h-[8rem] overflow-y-auto text-base md:text-xl">
                     {event.desc}
                   </div>
                 </div>
