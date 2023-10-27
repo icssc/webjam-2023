@@ -1,0 +1,37 @@
+{
+    "events": [
+        {
+            "title":"Kickoff Ceremony",
+            "data": "2023-11-13",
+            "time":"4PM",
+            "club": "ICSSC",
+            "logo": "/assets/img/clubs/acm.png",
+            "location": "DBH 6011",
+            "desc": "Come out to our opening ceremony to learn about the schedule, rules, and resources for WebJam! We will also be going over all of the exciting workshops we have planned for the week, so make sure to come by to learn more.",
+            "rsvp": "https://studentcouncil.ics.uci.edu/",
+            "recording": "https://www.youtube.com/watch?v=uHgt8giw1LY"
+        },
+        {
+            "title":"Peter teaches Petr-making",
+            "data": "2023-11-15",
+            "time":"11AM",
+            "club": "Design at UCI",
+            "logo": "/assets/img/clubs/design.webp",
+            "location": "DBH 1600",
+            "desc": "Did you know that the Design at UCI logo is actually an Anteater? Crazy, right? If you can't see it, the dot is its eye, and it's looking upwards and to the right!s",
+            "rsvp": "https://studentcouncil.ics.uci.edu/",
+            "recording": ""
+        },
+        {
+            "title":"Commit the Change plays Super Smash Brothers: Ultimate",
+            "data": "2023-11-17",
+            "time":"6PM",
+            "club": "CTC",
+            "logo": "/assets/img/clubs/ctc.svg",
+            "location": "DBH 4011",
+            "desc": "They yap all the time about 'Smash this', 'Smash that'; why don't they smash some ------",
+            "rsvp": "",
+            "recording": "https://www.youtube.com/watch?v=uHgt8giw1LY"
+        }
+    ]
+}

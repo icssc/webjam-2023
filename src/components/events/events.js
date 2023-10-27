@@ -28,10 +28,18 @@ export default function EventsSection() {
                     4PM • ICSSC • DBH 4011
                   </div>
                 </div>
-                <div>
-                  <a href="" target="_blank" className="flex w-32">
-                    <div className="bg-green-600 flex rounded-full drop-shadow-lg place-content-center text-xl w-32 h-10 items-center gap-2">
+                <div className="flex gap-4">
+                  <a href="" target="_blank" className="flex">
+                    <div className="bg-green-600 flex rounded-full drop-shadow-lg place-content-center text-xl px-4 h-10 items-center gap-2">
                       RSVP
+                      <span>
+                        <FaExternalLinkAlt />
+                      </span>
+                    </div>
+                  </a>
+                  <a href="" target="_blank" className="flex">
+                    <div className="bg-gray-500 flex rounded-full drop-shadow-lg place-content-center text-xl px-4 h-10 items-center gap-2">
+                      Recording
                       <span>
                         <FaExternalLinkAlt />
                       </span>
