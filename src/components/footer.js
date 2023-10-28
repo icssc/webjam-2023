@@ -74,7 +74,7 @@ export default function Footer() {
               href={link.link}
               target="_blank"
               referrerPolicy="noreferrer"
-              key={link.key}
+              key={link.id}
             >
               {link.icon}
             </Link>
