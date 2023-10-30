@@ -1,5 +1,5 @@
 import { FaExternalLinkAlt } from "react-icons/fa";
-import EventsData from "../../assets/data/events.json";
+import EventsData from "../../../assets/events.json";
 
 function getFormattedDate(date) {
   const dateObject = new Date(date + "T00:00:00").toLocaleDateString("en-US", {

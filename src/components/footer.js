@@ -6,7 +6,7 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import Link from "next/link";
-import Clubs from "../assets/data/clubs.json";
+import Clubs from "../../assets/clubs.json";
 
 const MEDIA_LINKS = [
   {
