@@ -7,7 +7,6 @@ import {
 } from "react-icons/fa";
 import Link from "next/link";
 import Clubs from "../assets/data/clubs.json";
-import Image from "next/image";
 
 const MEDIA_LINKS = [
   {
@@ -43,11 +42,9 @@ const ClubElement = (props) => {
     <div className="flex items-center text-center">
       <div className="w-[100px]">
         <Link href={website ? website : ""} target="_blank" rel="noreferrer">
-          <Image
+          <img
             src={logo}
             alt={name}
-            width={160}
-            height={160}
             className="rounded-lg"
           />
         </Link>
