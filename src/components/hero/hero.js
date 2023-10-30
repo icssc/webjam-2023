@@ -1,32 +1,54 @@
-import { FaCalendar, FaLocationArrow } from 'react-icons/fa'
-import styles from '../../styles/components/Hero.module.css'
+import { FaCalendar, FaLocationArrow } from "react-icons/fa";
+import styles from "../../styles/components/Hero.module.css";
 
 export default function HeroSection() {
   return (
     <>
-      <div className='w-[500px]'/>
-      <div
-        className={`
-        ${styles.heroContainer}
-        md:p-[2rem]
-        md:text-left
-        max-w-[600px]
-        h-[fit-content]
-        self-center
-        `}
-      >
-        <h1 className='md:text-[4rem] text-[3rem]'>WebJam 2023</h1>
-        <span>
-          <FaCalendar size={20}/>
-          <h2>November 13-17, 2023</h2>
-        </span>
-        <span>
-          <FaLocationArrow size={20}/>
-          <h2>DBH 3011</h2>
-        </span>
-        <p>ICS Student Council's week-long web application competition — no experience necessary!</p>
-        <p><a className={styles.button}>Apply</a> or be a <a className={styles.underline}>mentor</a>!</p>
+      <div className="z-10 mx-10 flex flex-col place-content-center gap-4">
+        <div className="flex flex-col place-content-center">
+          <h1 className="flex place-content-center text-center text-5xl md:text-7xl lg:text-8xl">
+            WebJam 2023
+          </h1>
+
+          <div className="mx-auto flex w-[75%] flex-col place-content-center text-center lg:w-[65%]">
+            <p className="text-xl md:text-2xl lg:text-3xl">
+              ICS Student Council's week-long web application competition — no
+              experience necessary!
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-row place-content-center gap-6 text-xl md:text-2xl lg:text-3xl">
+          <span className="flex flex-row items-center gap-2">
+            <FaCalendar size={20} />
+            <h2>November 13-17</h2>
+          </span>
+          <span className="flex flex-row items-center gap-2">
+            <FaLocationArrow size={20} />
+            <h2>DBH 3011</h2>
+          </span>
+        </div>
+
+        <div className="mx-auto mt-4 flex">
+          <p className="text-2xl md:text-3xl lg:text-4xl">
+            <a
+              className="rounded-xl border-4 border-solid border-yellow-300 px-3 py-1"
+              href="https://studentcouncil.ics.uci.edu/"
+              target="_blank"
+            >
+              Apply
+            </a>{" "}
+            or be a <a className="underline">mentor</a>!
+          </p>
+        </div>
       </div>
+
+      <div className={`${styles.oceanTop} absolute left-0 top-0 w-[100%]`} />
+      <div className={`${styles.dolphin} absolute left-[-25vw] md:left-[4vw] top-0 md:top-[0] w-[300px] lg:w-[30vw]`} />
+      <div className={`${styles.pufferfish} absolute bottom-[20vw] md:bottom-[4vw] left-[1vw] lg:left-[5vw]  w-[50vw] lg:w-[30vw]`} />
+      <div className={`${styles.fishies} absolute bottom-[15vw] md:bottom-[7.5vw] right-[1vw] lg:right-[8vw]  w-[50vw] lg:w-[30vw]`} />
+      <div className={`${styles.oceanTopFloor} absolute bottom-0 left-0 w-[100%]`} />
+
     </>
-  )
+  );
 }

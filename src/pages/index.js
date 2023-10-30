@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <section
         id="hero"
-        className="flex flex-col md:flex-row md:ml-[4rem] md:mr-[2rem] md:place-content-end place-content-center min-h-[calc(100vh-110px)] mx-[2rem]"
+        className="flex min-h-[100vh] text-black place-content-center "
       >
         <HeroSection />
       </section>

@@ -2,14 +2,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-}
-
-.heroContainer span {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    column-gap: 0.8rem;
 }
 
 .heroContainer h2 {
@@ -30,11 +22,67 @@
     width: fit-content;
     padding: 0.5rem;
     border-radius: 12px;
-    color: black;
-    background-color: #FF9A5C;
     margin-right: 2.5px;
 }
 
 .heroContainer a.underline{
     text-decoration: underline;
+}
+
+/* Graphics */
+.oceanTop {
+    background-image: url("/assets/img/graphics/layer1/OceanTopCeiling.svg");
+    height: 139px;
+    margin-top: 90px;
+}
+
+.dolphin {
+    background-image: url("/assets/img/graphics/layer1/Dolphin.svg");
+    height: 100%;
+    margin-top: 90px;
+    z-index: 2;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    animation: MoveUpDown 5s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.pufferfish {
+    background-image: url("/assets/img/graphics/layer1/PufferFish.svg");
+    height: 100%;
+    z-index: 2;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    animation: MoveUpDown 5s ease-in-out infinite;
+}
+
+.fishies {
+    background-image: url("/assets/img/graphics/layer1/Fishies.svg");
+    height: 100%;
+    z-index: 2;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    animation: MoveUpDown 5s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.oceanTopFloor {
+    background-image: url("/assets/img/graphics/layer1/OceanTopFloor.svg");
+    height: 857px;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
 }

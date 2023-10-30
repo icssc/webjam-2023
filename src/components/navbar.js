@@ -22,7 +22,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`${styles.nav} ${showNav ? "opacity-100" : "opacity-0"}`}>
+    <nav className={`${styles.nav} ${showNav ? "opacity-100" : "opacity-0"} place-content-center md:pl-[4rem] md:place-content-start`}>
       <ul>
         <a href="/">
           <img src="/logo.svg" alt="ICSSC Logo" />

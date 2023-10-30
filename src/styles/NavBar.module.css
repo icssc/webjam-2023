@@ -6,11 +6,12 @@
   top: 0;
   z-index: 1;
   width: 100%;
-  color: white;
+  color: black;
   background-color: transparent;
-  padding: 1.5rem 4rem 0px;
+  padding: 1.5rem 0rem;
   height: 55px;
   transition: opacity 400ms ease;
+  z-index: 100;
 }
 
 
