@@ -11,7 +11,7 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>WebJam 2023</title>
       </Head>
-      {/* <NavBar /> */}
+      <NavBar />
       <Layout>
         <Component {...pageProps} />
       </Layout>
