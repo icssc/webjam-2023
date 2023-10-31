@@ -19,26 +19,33 @@ export default function HeroSection() {
         </div>
 
         <div className="flex flex-row place-content-center gap-6 text-xl md:text-2xl lg:text-3xl">
-          <span className="flex flex-row items-center gap-2">
+          <span className="flex flex-row items-center gap-4">
             <FaCalendar size={20} />
             <h2>November 13-17</h2>
           </span>
-          <span className="flex flex-row items-center gap-2">
+          <span className="flex flex-row items-center gap-4">
             <FaLocationArrow size={20} />
-            <h2>DBH 3011</h2>
+            <h2>Donald Bren Hall</h2>
           </span>
         </div>
 
         <div className="mx-auto mt-4 flex">
           <p className="text-2xl md:text-3xl lg:text-4xl">
             <a
-              className="rounded-xl border-4 border-solid border-yellow-300 px-3 py-1"
+              className="rounded-xl border-4 border-solid border-yellow-300 px-3 py-1 hover:bg-yellow-300 transition duration-300"
               href="https://studentcouncil.ics.uci.edu/"
               target="_blank"
             >
               Apply
-            </a>{" "}
-            or be a <a className="underline">mentor</a>!
+            </a>
+            {" or be a "}
+            <a 
+            className="underline decoration-black hover:decoration-[#00B929] transition duration-300"
+            href="https://studentcouncil.ics.uci.edu/"
+            target="_blank"
+            >
+              mentor
+            </a>!
           </p>
         </div>
       </div>

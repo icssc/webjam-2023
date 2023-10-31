@@ -26,3 +26,9 @@ main {
 #hero {
   background: linear-gradient(180deg, #BDE4FF, #3DB2FF);
 }
+
+#about, #events, #faq, #footer {
+  margin-top: -2px;
+  color: black;
+  background: #F0FC97;
+}

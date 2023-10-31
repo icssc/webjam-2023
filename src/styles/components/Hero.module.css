@@ -4,31 +4,6 @@
     justify-content: center;
 }
 
-.heroContainer h2 {
-    font-size: 1.5rem;
-}
-
-.heroContainer p {
-    font-size: 1.25rem;
-    margin: 1.3rem 0px;
-}
-
-.heroContainer a:hover {
-    cursor: pointer;
-}
-
-.heroContainer a.button {
-    font-size: 1.5rem;
-    width: fit-content;
-    padding: 0.5rem;
-    border-radius: 12px;
-    margin-right: 2.5px;
-}
-
-.heroContainer a.underline{
-    text-decoration: underline;
-}
-
 /* Graphics */
 .oceanTop {
     background-image: url("/assets/img/graphics/layer1/OceanTopCeiling.svg");
