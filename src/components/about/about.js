@@ -10,7 +10,7 @@ export default function AboutSection() {
         <br/>
         <p>
           Over the past 3 years, WebJam has focused on encouraging beginners and people who are curious about web technologies — from frontend to backend!
-          Our goal is to provide learning and networking opportunities for our community of developers, especially ones that from underrepresented backgrounds in the tech space.
+          Our goal is to provide learning and networking opportunities for our community of developers, especially ones that come from underrepresented backgrounds in the tech space.
         </p>
       </div>
     </div>
