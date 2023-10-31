@@ -34,14 +34,20 @@ export default function EventsSection() {
 
   return (
     <>
-      <div className="flex flex-col mx-8 md:mx-24 lg:mx-36 xl:mx-48 my-10 gap-2 md:gap-4">
+      {/* UNCOMMENT WHEN WE HAVE EVENTS (Proper Margins) */}
+      {/* <div className="mx-8 my-10 flex flex-col gap-2 md:mx-24 md:gap-4 xl:mx-[20%]"> */}
+      <div className="mx-[10%] mb-20 flex flex-col gap-4 md:mx-[20%]">
         <div className="flex place-content-start text-5xl md:text-6xl">
           Schedule
         </div>
 
-        {sortedSchedule.map((date) => (
+        <div className="flex text-xl md:text-2xl lg:text-3xl">
+          Our full itinerary of Events and Workshops will be available soon!
+        </div>
+
+        {/* {sortedSchedule.map((date) => (
           <div className="flex flex-col gap-1 mb-2 md:mb-6" key={date[0].date}>
-            <div className="text-3xl lg:text-4xl text-gray-400">
+            <div className="text-3xl lg:text-4xl text-slate-600 border-gray-800 border-b-4 border-none md:border-dashed">
               {getFormattedDate(date[0].date)}
             </div>
 
@@ -55,7 +61,7 @@ export default function EventsSection() {
               })
               .map((event) => (
                 <div
-                  className="flex flex-col lg:flex-row border-gray-400 border-t-4 border-dashed w-[100%] py-4 lg:items-center lg:justify-between gap-6 lg:gap-0"
+                  className="flex flex-col lg:flex-row w-[100%] py-4 lg:items-center lg:justify-between gap-6 lg:gap-0  border-gray-800 border-t-4 border-dashed md:border-none"
                   key={event.title + event.time}
                 >
                   <div className="flex gap-6 lg:h-[100%] align-top items-start">
@@ -69,7 +75,7 @@ export default function EventsSection() {
 
                     <div className="flex flex-col gap-4">
                       <div>
-                        <div className="flex text-3xl md:text-4xl text-white md:w-[28rem] lg:w-[20rem] xl:w-[28rem]">
+                        <div className="flex text-3xl md:text-4xl md:w-[28rem] lg:w-[20rem] xl:w-[28rem]">
                           {event.title}
                         </div>
                         <div className="text-lg md:text-xl">
@@ -80,7 +86,7 @@ export default function EventsSection() {
                       <div className="flex gap-2 md:gap-4">
                         {event.rsvp && (
                           <a href={event.rsvp} target="_blank" className="flex">
-                            <div className="bg-green-600 flex rounded-full drop-shadow-lg place-content-center text-xl px-4 h-10 items-center gap-2">
+                            <div className="bg-green-700 text-slate-100 flex rounded-full drop-shadow-lg place-content-center text-xl px-4 h-10 items-center gap-2">
                               RSVP
                               <span className="md: visible hidden">
                                 <FaExternalLinkAlt />
@@ -95,7 +101,7 @@ export default function EventsSection() {
                             target="_blank"
                             className="flex"
                           >
-                            <div className="bg-gray-500 flex rounded-full drop-shadow-lg place-content-center text-xl px-4 h-10 items-center gap-2">
+                            <div className="bg-gray-600 text-slate-100 flex rounded-full drop-shadow-lg place-content-center text-xl px-4 h-10 items-center gap-2">
                               Recording
                               <span>
                                 <FaExternalLinkAlt />
@@ -106,13 +112,13 @@ export default function EventsSection() {
                       </div>
                     </div>
                   </div>
-                  <div className="lg:w-[40%] lg:min-h-[8rem] overflow-y-auto text-base md:text-xl">
+                  <div className="lg:w-[40%] lg:min-h-[8rem] overflow-y-auto text-base text-xl">
                     {event.desc}
                   </div>
                 </div>
               ))}
           </div>
-        ))}
+        ))} */}
       </div>
     </>
   );

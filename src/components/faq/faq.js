@@ -16,8 +16,11 @@ function FAQTab(props) {
 
 export default function FAQSection() {
   return (
-    <div className={`${styles.accordion} md:max-w-[50%] `}>
+    <div className="flex flex-col items-center gap-4 mt-5">
+    <div className="text-4xl md:text-7xl">FAQ</div>
+    <div className={`${styles.accordion} md:max-w-[60%] `}>
       {faq_data.map((element, index) => <FAQTab key={index} id={index} {...element}/>)}
+    </div>
     </div>
   )
 }
