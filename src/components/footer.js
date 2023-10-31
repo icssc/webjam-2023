@@ -55,15 +55,15 @@ const ClubElement = (props) => {
 
 export default function Footer() {
   return (
-    <div className="flex flex-col gap-4 sm:gap-10 mt-10">
-      <div className="flex flex-col gap-4">
-        <span className="flex justify-center text-3xl">Our Member Clubs</span>
+    <div id="footer" className="flex flex-col gap-4 sm:gap-10 pt-[10vh]">
+      {/* <div className="flex flex-col gap-4">
+        <span className="flex justify-center text-4xl md:text-7xl">Thank You to Our Partners!</span>
         <div className="flex flex-row mx-auto overflow-x-scroll w-[50%] gap-6">
           {Clubs.map((club) => (
             <ClubElement {...club} key={club.id} />
           ))}
         </div>
-      </div>
+      </div> */}
       <footer className="w-[100%] flex flex-col gap-5 p-6">
         <div className="flex justify-center gap-5 sm:gap-12 text-3xl sm:text-4xl">
           {MEDIA_LINKS.map((link) => (
