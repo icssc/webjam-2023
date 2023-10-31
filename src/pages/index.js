@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <section
         id="hero"
-        className="flex min-h-[100vh] text-black place-content-center "
+        className="flex h-[100svh] text-black place-content-center "
       >
         <HeroSection />
       </section>
