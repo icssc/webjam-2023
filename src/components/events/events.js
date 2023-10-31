@@ -34,12 +34,18 @@ export default function EventsSection() {
 
   return (
     <>
-      <div className="flex flex-col mx-8 md:mx-24 xl:mx-[20%] my-10 gap-2 md:gap-4">
+      {/* UNCOMMENT WHEN WE HAVE EVENTS (Proper Margins) */}
+      {/* <div className="mx-8 my-10 flex flex-col gap-2 md:mx-24 md:gap-4 xl:mx-[20%]"> */}
+      <div className="mx-[10%] mb-20 flex flex-col gap-4 md:mx-[20%]">
         <div className="flex place-content-start text-5xl md:text-6xl">
           Schedule
         </div>
 
-        {sortedSchedule.map((date) => (
+        <div className="flex text-xl md:text-2xl lg:text-3xl">
+          Our full itinerary of Events and Workshops will be available soon!
+        </div>
+
+        {/* {sortedSchedule.map((date) => (
           <div className="flex flex-col gap-1 mb-2 md:mb-6" key={date[0].date}>
             <div className="text-3xl lg:text-4xl text-slate-600 border-gray-800 border-b-4 border-none md:border-dashed">
               {getFormattedDate(date[0].date)}
@@ -112,7 +118,7 @@ export default function EventsSection() {
                 </div>
               ))}
           </div>
-        ))}
+        ))} */}
       </div>
     </>
   );
