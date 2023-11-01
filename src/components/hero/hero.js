@@ -33,7 +33,7 @@ export default function HeroSection() {
           <p className="text-2xl md:text-3xl lg:text-4xl">
             <a
               className="rounded-xl border-4 border-solid border-yellow-300 px-3 py-1 hover:bg-yellow-300 transition duration-300"
-              href="https://studentcouncil.ics.uci.edu/"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScSo2MhU1ehmKB9ERKE2QQ-okO6D_BgzZWXlZt-cEo7d_mOYQ/viewform"
               target="_blank"
             >
               Apply
