@@ -80,7 +80,7 @@ export default function EventsSection() {
                           {event.title}
                         </div>
                         <div className="text-lg md:text-xl">
-                          {`${event.time} • ${event.club} • ${event.location}`}
+                          {`${event.time} • ${event.club && event.club + "• " } ${event.location}`}
                         </div>
                       </div>
 
