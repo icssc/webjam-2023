@@ -68,7 +68,7 @@ export default function HeroSection() {
       <div className={`${styles.oceanTop} absolute left-0 top-0 w-[100%]`} style={{ top: -scrollValue * .4 + 'px' }} />
       <div className={`${styles.dolphin} absolute left-[-50vw] md:left-[4vw] top-0 md:top-[0] w-[300px] lg:w-[30vw]`} style={{ top: -scrollValue * 0.1 + 'px' }}  />
       <div className={`${styles.pufferfish} absolute bottom-[20vw] md:bottom-[4vw] left-[1vw] lg:left-[5vw]  w-[50vw] lg:w-[30vw]`} style={{ top: -scrollValue * 0.45 - 50 + 'px' }} />
-      <div className={`${styles.fishies} absolute bottom-[15vw] md:bottom-[7.5vw] right-[1vw] lg:right-[8vw]  w-[50vw] lg:w-[30vw]`} style={{ top: -scrollValue * 0.3 - 50 + 'px' }} />
+      <div className={`${styles.fishies} absolute bottom-[15vw] md:bottom-[7.5vw] right-[1vw] lg:right-[8vw]  w-[50vw] lg:w-[30vw]`} style={{ top: -scrollValue * 0.2 - 50 + 'px' }} />
       <div className={`${styles.oceanTopFloor} absolute bottom-0 left-0 w-[100%]`} />
 
     </>
