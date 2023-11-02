@@ -16,17 +16,17 @@ const MEDIA_LINKS = [
   },
   {
     id: 2,
-    link: "https://www.facebook.com/ICSStudentCouncil/",
+    link: "https://www.instagram.com/icssc.uci/",
     icon: <FaInstagram />,
   },
   {
     id: 3,
-    link: "https://www.facebook.com/ICSStudentCouncil/",
+    link: "https://discord.gg/c4t5dGcM9S",
     icon: <FaDiscord />,
   },
   {
     id: 4,
-    link: "https://www.facebook.com/ICSStudentCouncil/",
+    link: "https://github.com/icssc",
     icon: <FaGithub />,
   },
   {

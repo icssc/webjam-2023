@@ -58,6 +58,11 @@ https://codepen.io/raubaca/pen/PZzpVe
   background-color: aliceblue;
 }
 
+
+.tab__content a {
+  text-decoration: underline;
+}
+
 .tab__close {
   justify-content: flex-end;
   padding: 0.5rem 1rem;

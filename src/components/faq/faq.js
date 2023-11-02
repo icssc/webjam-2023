@@ -20,6 +20,21 @@ export default function FAQSection() {
     <div className="text-4xl md:text-7xl">FAQ</div>
     <div className={`${styles.accordion} md:max-w-[50%] `}>
       {faq_data.map((element, index) => <FAQTab key={index} id={index} {...element}/>)}
+      {/* Hardcoding some FAQ tabs to include clickable URLs */}
+      <div className={styles.tab}>
+        <input type="checkbox" name={styles.accordion} id={faq_data.length} />
+        <label htmlFor={faq_data.length} className={styles.tab__label}>What are the rules?</label>
+        <div className={styles.tab__content}>
+          <p className='text-xl'>Please refer to the <a target="_blank" href="https://docs.google.com/document/d/1T2Dh_FVx0zU8xhNC2CHDMb_0xg-j2oFBUfp-M0C4FqM/edit">WebJam Rules and Code of Conduct</a> for more information.</p>
+        </div>
+      </div>
+      <div className={styles.tab}>
+        <input type="checkbox" name={styles.accordion} id={faq_data.length+1} />
+        <label htmlFor={faq_data.length+1} className={styles.tab__label}>My question isn't here!</label>
+        <div className={styles.tab__content}>
+          <p className='text-xl'>Unanswered question? Email us at <a target="_blank" href="mailto:icssc@uci.edu">icssc@uci.edu</a>.</p>
+        </div>
+      </div>
     </div>
     </div>
   )
