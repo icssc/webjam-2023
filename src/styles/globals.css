@@ -31,4 +31,6 @@ main {
   margin-top: -2px;
   color: black;
   background: #F0FC97;
+  position: relative;
+  z-index: 10;
 }
