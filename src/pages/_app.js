@@ -8,7 +8,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="WebJam is a beginner friendly, week-long event where students come together to create fully functional web applications. Apply now!" />
         <meta name="keywords" content="beginner-friendly, hackathon, web applications" />
