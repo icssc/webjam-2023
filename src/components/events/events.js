@@ -34,20 +34,21 @@ export default function EventsSection() {
 
   return (
     <>
-      {/* UNCOMMENT WHEN WE HAVE EVENTS (Proper Margins) */}
-      {/* <div className="mx-8 my-10 flex flex-col gap-2 md:mx-24 md:gap-4 xl:mx-[20%]"> */}
-      <div className="mx-[10%] mb-20 flex flex-col gap-4 md:mx-[20%]">
+      <div className="mx-8 my-10 flex min-w-[80%] flex-col gap-2 md:mx-[10%] md:gap-4 xl:mx-[20%] xl:min-w-[60%]">
         <div className="flex place-content-start text-5xl md:text-6xl">
           Schedule
         </div>
 
-        <div className="flex text-xl md:text-2xl lg:text-3xl">
+        {/* <div className="flex text-xl md:text-2xl lg:text-3xl">
           Our full itinerary of Events and Workshops will be available soon!
-        </div>
+        </div> */}
 
-        {/* {sortedSchedule.map((date) => (
-          <div className="flex flex-col gap-1 mb-2 md:mb-6" key={date[0].date}>
-            <div className="text-3xl lg:text-4xl text-slate-600 border-gray-800 border-b-4 border-none md:border-dashed">
+        {sortedSchedule.map((date) => (
+          <div
+            className="mb-2 flex flex-col md:mb-6 lg:gap-6"
+            key={date[0].date}
+          >
+            <div className="flex w-[100%] border-b-4 border-dashed border-gray-800 text-3xl text-slate-600 md:mb-2 md:border-dashed lg:text-4xl mb-3">
               {getFormattedDate(date[0].date)}
             </div>
 
@@ -61,11 +62,11 @@ export default function EventsSection() {
               })
               .map((event) => (
                 <div
-                  className="flex flex-col lg:flex-row w-[100%] py-4 lg:items-center lg:justify-between gap-6 lg:gap-0  border-gray-800 border-t-4 border-dashed md:border-none"
+                  className="flex w-[100%] flex-col lg:flex-row lg:items-center lg:justify-between lg:gap-0"
                   key={event.title + event.time}
                 >
-                  <div className="flex gap-6 lg:h-[100%] align-top items-start">
-                    <div className="hidden md:flex items-center h-32 w-32">
+                  <div className="mb-6 flex items-start gap-6 align-top lg:h-[100%]">
+                    <div className="hidden h-32 w-32 items-center md:flex">
                       <img
                         src={event.logo}
                         alt="Club Logo"
@@ -75,18 +76,18 @@ export default function EventsSection() {
 
                     <div className="flex flex-col gap-4">
                       <div>
-                        <div className="flex text-3xl md:text-4xl md:w-[28rem] lg:w-[20rem] xl:w-[28rem]">
+                        <div className="flex text-3xl md:w-[28rem] md:text-4xl lg:w-[20rem] xl:w-[28rem]">
                           {event.title}
                         </div>
                         <div className="text-lg md:text-xl">
-                          {`${event.time} • ${event.club} • ${event.location}`}
+                          {`${event.time} • ${event.club && event.club + "• " } ${event.location}`}
                         </div>
                       </div>
 
                       <div className="flex gap-2 md:gap-4">
                         {event.rsvp && (
                           <a href={event.rsvp} target="_blank" className="flex">
-                            <div className="bg-green-700 text-slate-100 flex rounded-full drop-shadow-lg place-content-center text-xl px-4 h-10 items-center gap-2">
+                            <div className="flex h-10 place-content-center items-center gap-2 rounded-full bg-green-700 px-4 text-xl text-slate-100 drop-shadow-lg">
                               RSVP
                               <span className="md: visible hidden">
                                 <FaExternalLinkAlt />
@@ -101,7 +102,7 @@ export default function EventsSection() {
                             target="_blank"
                             className="flex"
                           >
-                            <div className="bg-gray-600 text-slate-100 flex rounded-full drop-shadow-lg place-content-center text-xl px-4 h-10 items-center gap-2">
+                            <div className="flex h-10 place-content-center items-center gap-2 rounded-full bg-gray-600 px-4 text-xl text-slate-100 drop-shadow-lg">
                               Recording
                               <span>
                                 <FaExternalLinkAlt />
@@ -112,13 +113,13 @@ export default function EventsSection() {
                       </div>
                     </div>
                   </div>
-                  <div className="lg:w-[40%] lg:min-h-[8rem] overflow-y-auto text-base text-xl">
+                  <div className="overflow-y-auto text-lg md:text-xl lg:min-h-[8rem] lg:w-[40%]">
                     {event.desc}
                   </div>
                 </div>
               ))}
           </div>
-        ))} */}
+        ))}
       </div>
     </>
   );

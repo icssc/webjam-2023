@@ -28,6 +28,7 @@ main {
 }
 
 #about, #events, #faq, #footer {
+  padding-top: 70px;
   margin-top: -2px;
   color: black;
   background: #F0FC97;

@@ -1,48 +1,103 @@
 {
     "schedule": [          
         {
-            "title":"Kickoff Ceremony",
-            "time":"4PM",
-            "club": "ICSSC",
-            "logo": "/logo.svg",
-            "location": "DBH 6011",
+            "title":"Opening Ceremony",
+            "time":"6PM",
+            "club": "",
+            "logo": "/favicon.ico",
+            "location": "DBH 3011",
             "date": "2023-11-13",
-            "desc": "Come out to our opening ceremony to learn about the schedule, rules, and resources for WebJam! We will also be going over all of the exciting workshops we have planned for the week, so make sure to come by to learn more.",
-            "rsvp": "https://studentcouncil.ics.uci.edu/",
-            "recording": "https://www.youtube.com/watch?v=uHgt8giw1LY"
+            "desc": "",
+            "rsvp": "",
+            "recording": ""
         },   
         {
-            "title":"Peter teaches Petr-making",
-            "time":"11AM",
-            "club": "Design at UCI",
-            "logo": "/assets/img/clubs/design.webp",
-            "location": "DBH 1600",
-            "date": "2023-11-15",
-            "desc": "Did you know that the Design at UCI logo is actually an Anteater? Crazy, right? If you can't see it, the dot is its eye, and it's looking upwards and to the right!",
-            "rsvp": "https://studentcouncil.ics.uci.edu/",
+            "title":"Intro to HTML/CSS",
+            "time":"7PM",
+            "club": "Hack at UCI",
+            "logo": "/assets/img/clubs/hack.png",
+            "location": "DBH 3011",
+            "date": "2023-11-13",
+            "desc": "",
+            "rsvp": "",
             "recording": ""
         },  
         {
-            "title":"Super Smash Brothers Ultimate Gaming",
-            "time":"1PM",
+            "title":"Choosing a Tech Stack",
+            "time":"6PM",
             "club": "Commit the Change",
             "logo": "/assets/img/clubs/ctc.svg",
-            "location": "DBH 4011",
-            "date": "2023-11-17",
-            "desc": "Y'all yap all the time about 'Smash this', 'Smash that'; why don't y'all smash some ------",
+            "location": "DBH 3011",
+            "date": "2023-11-14",
+            "desc": "",
             "rsvp": "",
-            "recording": "https://www.youtube.com/watch?v=uHgt8giw1LY"
+            "recording": ""
         },
         {
-            "title":"ZotHacks, but you can't use 'Zot' in your project name",
-            "time":"3AM",
-            "club": "Hack at UCI",
-            "logo": "/assets/img/clubs/hack.png",
+            "title":"Work Time",
+            "time":"7PM",
+            "club": "",
+            "logo": "/favicon.ico",
+            "location": "DBH 3011",
+            "date": "2023-11-14",
+            "desc": "",
+            "rsvp": "",
+            "recording": ""
+        },
+        {
+            "title":"Designing an Appealing Website",
+            "time":"6PM",
+            "club": "Design at UCI",
+            "logo": "/assets/img/clubs/design.webp",
+            "location": "DBH 6011",
+            "date": "2023-11-15",
+            "desc": "",
+            "rsvp": "",
+            "recording": ""
+        },
+        {
+            "title":"Work Time",
+            "time":"7PM",
+            "club": "",
+            "logo": "/favicon.ico",
+            "location": "DBH 6011",
+            "date": "2023-11-15",
+            "desc": "",
+            "rsvp": "",
+            "recording": ""
+        },
+        {
+            "title":"Web Accessibility",
+            "time":"6PM",
+            "club": "ICSSC Projects",
+            "logo": "/icssc_logo.svg",
             "location": "DBH 4011",
+            "date": "2023-11-16",
+            "desc": "",
+            "rsvp": "",
+            "recording": ""
+        },
+        {
+            "title":"Work Time",
+            "time":"7PM",
+            "club": "",
+            "logo": "/favicon.ico",
+            "location": "DBH 4011",
+            "date": "2023-11-16",
+            "desc": "",
+            "rsvp": "",
+            "recording": ""
+        },
+        {
+            "title":"Closing Ceremony",
+            "time":"6:30PM",
+            "club": "",
+            "logo": "/favicon.ico",
+            "location": "DBH 6011",
             "date": "2023-11-17",
-            "desc": "Like seriously, how much money do I have to pay Calvin and Jeffrey for them to make 'Best Hack without 'Zot' in the name' a legitimate meme category!?",
-            "rsvp": "https://studentcouncil.ics.uci.edu/",
-            "recording": "https://www.youtube.com/watch?v=uHgt8giw1LY"
+            "desc": "",
+            "rsvp": "",
+            "recording": ""
         }
     ]
 }
