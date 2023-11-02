@@ -25,7 +25,7 @@ export default function Navbar() {
     <nav className={`${styles.nav} ${showNav ? "opacity-100" : "opacity-0"} place-content-center md:pl-[4rem] md:place-content-start`}>
       <ul>
         <a href="/">
-          <img src="/logo.svg" alt="ICSSC Logo" />
+          <img src="/webjam_logo.png" alt="WebJam 2023 Logo" />
         </a>
         <li>
           <a href="#about">About</a>

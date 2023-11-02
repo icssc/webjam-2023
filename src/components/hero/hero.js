@@ -33,7 +33,7 @@ export default function HeroSection() {
           <p className="text-2xl md:text-3xl lg:text-4xl">
             <a
               className="rounded-xl border-4 border-solid border-yellow-300 px-3 py-1 hover:bg-yellow-300 transition duration-300"
-              href="https://studentcouncil.ics.uci.edu/"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScSo2MhU1ehmKB9ERKE2QQ-okO6D_BgzZWXlZt-cEo7d_mOYQ/viewform"
               target="_blank"
             >
               Apply
@@ -41,7 +41,7 @@ export default function HeroSection() {
             {" or be a "}
             <a 
             className="underline decoration-black hover:decoration-[#00B929] transition duration-300"
-            href="https://studentcouncil.ics.uci.edu/"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf6TAua_AGJz-svV4iHu5nUDNYT5qXT2JmHLON8txusYHuAZg/viewform"
             target="_blank"
             >
               mentor

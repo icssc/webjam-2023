@@ -25,10 +25,26 @@
   gap: 28px;
 
 }
+
+@keyframes shake {
+  25% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+}
+
 .nav ul:first-child a img{
-  height: 50px;
+  height: 70px;
   margin-right: 10px;
 }
+
+.nav ul:first-child a img:hover{
+  animation: shake .3s;
+}
+
+
 
 .nav ul li {
   font-size: 25px;
