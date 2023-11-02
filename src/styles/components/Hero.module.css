@@ -1,21 +1,16 @@
-.heroContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 /* Graphics */
 .oceanTop {
     background-image: url("/assets/img/graphics/layer1/OceanTopCeiling.svg");
     height: 139px;
     margin-top: 90px;
+    z-index: 0;
 }
 
 .dolphin {
     background-image: url("/assets/img/graphics/layer1/Dolphin.svg");
     height: 100%;
     margin-top: 90px;
-    z-index: 2;
+    z-index: 0;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
@@ -26,7 +21,7 @@
 .pufferfish {
     background-image: url("/assets/img/graphics/layer1/PufferFish.svg");
     height: 100%;
-    z-index: 2;
+    z-index: 1;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -36,7 +31,7 @@
 .fishies {
     background-image: url("/assets/img/graphics/layer1/Fishies.svg");
     height: 100%;
-    z-index: 2;
+    z-index: 1;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -50,14 +45,14 @@
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
-    z-index: 1;
+    z-index: 0;
 }
 
 @keyframes MoveUpDown {
     0%, 100% {
-      transform: translateY(0px);
+      transform: translateY(0%);
     }
     50% {
-        transform: translateY(20px);
+        transform: translateY(2%);
     }
 }
