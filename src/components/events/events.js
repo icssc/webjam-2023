@@ -48,7 +48,7 @@ export default function EventsSection() {
             className="mb-2 flex flex-col md:mb-6 lg:gap-6"
             key={date[0].date}
           >
-            <div className="flex w-[100%] border-b-4 border-dashed border-gray-800 text-3xl text-slate-600 md:mb-2 md:border-dashed lg:text-4xl">
+            <div className="flex w-[100%] border-b-4 border-dashed border-gray-800 text-3xl text-slate-600 md:mb-2 md:border-dashed lg:text-4xl mb-3">
               {getFormattedDate(date[0].date)}
             </div>
 
