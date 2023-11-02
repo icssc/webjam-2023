@@ -1,5 +1,6 @@
 import { FaExternalLinkAlt } from "react-icons/fa";
 import EventsData from "../../../assets/events.json";
+import { useEffect, useState } from "react";
 
 function getFormattedDate(date) {
   const dateObject = new Date(date + "T00:00:00").toLocaleDateString("en-US", {
@@ -12,25 +13,34 @@ function getFormattedDate(date) {
   return dateObject;
 }
 
-function getSortedSchedule(schedule) {
-  const sortedSchedule = {};
-
-  schedule.forEach((event) => {
-    const date = event.date;
-    if (!sortedSchedule[date]) {
-      sortedSchedule[date] = [];
-    }
-    sortedSchedule[date].push(event);
-  });
-
-  const sortedEvents = Object.values(sortedSchedule);
-
-  return sortedEvents;
-}
-
 export default function EventsSection() {
-  const schedule = EventsData.schedule;
-  const sortedSchedule = getSortedSchedule(schedule);
+  const [sortedSchedule, setSortedSchedule] = useState([]);
+
+  useEffect(() => {
+    const schedule = EventsData.schedule;
+    const sortedSchedule = {};
+
+    schedule.forEach((event) => {
+      const date = event.date;
+      if (!sortedSchedule[date]) {
+        sortedSchedule[date] = [];
+      }
+      sortedSchedule[date].push(event);
+    });
+
+    // Sort the events by time here
+    const sortedEvents = Object.values(sortedSchedule).map((date) =>
+      date.sort((a, b) => {
+        const timeA =
+          parseInt(a.time, 10) + (a.time.includes("PM") ? 12 : 0);
+        const timeB =
+          parseInt(b.time, 10) + (b.time.includes("PM") ? 12 : 0);
+        return timeA - timeB;
+      })
+    );
+
+    setSortedSchedule(sortedEvents);
+  }, []);
 
   return (
     <>
