@@ -41,7 +41,7 @@ export default function HeroSection() {
             {" or be a "}
             <a 
             className="underline decoration-black hover:decoration-[#00B929] transition duration-300"
-            href="https://studentcouncil.ics.uci.edu/"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf6TAua_AGJz-svV4iHu5nUDNYT5qXT2JmHLON8txusYHuAZg/viewform"
             target="_blank"
             >
               mentor
