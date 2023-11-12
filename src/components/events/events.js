@@ -60,7 +60,7 @@ export default function EventsSection() {
 
             {date.map((event) => (
               <div
-                className="flex w-[100%] flex-col lg:flex-row lg:items-center lg:justify-between lg:gap-0"
+                className="flex w-[100%] flex-col lg:flex-row lg:items-center lg:justify-between lg:gap-0 pt-4 pb-8"
                 key={event.title + event.time}
               >
                 <div className="mb-6 flex items-start gap-6 align-top lg:h-[100%]">
