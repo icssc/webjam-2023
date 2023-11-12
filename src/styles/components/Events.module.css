@@ -1,0 +1,44 @@
+/* Graphics */
+
+.middleBottom {
+  background-image: url("/assets/img/graphics/layer2/MiddleLayerFloor.svg");
+  height: 800px;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.eel {
+  background-image: url("/assets/img/graphics/layer2/MiddleEel.svg");
+  height: 300px;
+  margin-top: 90px;
+  z-index: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  animation: MoveUpDown 5s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.bubbles {
+  background-image: url("/assets/img/graphics/layer1/RandomBubbles.svg");
+  margin-top: 90px;
+  width: 350px;
+  z-index: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  animation: MoveUpDown 5s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(2%);
+  }
+}

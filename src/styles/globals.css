@@ -3,15 +3,13 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'freude';
-  src: url('/fonts/Freude.otf');
- }
-
+  font-family: "freude";
+  src: url("/fonts/Freude.otf");
+}
 
 html {
   scroll-behavior: smooth;
-  font-family: 'freude', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+  font-family: "freude", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -20,18 +18,37 @@ body {
 }
 
 main {
-  min-height: 100vh
+  min-height: 100vh;
 }
 
 #hero {
-  background: linear-gradient(180deg, #BDE4FF, #3DB2FF);
+  background: linear-gradient(180deg, #bde4ff, #3db2ff);
 }
 
-#about, #events, #faq, #footer {
+#about {
+  background: linear-gradient(180deg, #3db2ff, #0f6aa6);
   padding-top: 70px;
   margin-top: -2px;
   color: black;
-  background: #F0FC97;
+  position: relative;
+  z-index: 10;
+}
+
+#events {
+  background: linear-gradient(180deg, #0f6aa6, #0c507e);
+  padding-top: 70px;
+  margin-top: -2px;
+  color: white;
+  position: relative;
+  z-index: 10;
+}
+
+#faq,
+#footer {
+  padding-top: 70px;
+  margin-top: -2px;
+  color: black;
+  background: #f0fc97;
   position: relative;
   z-index: 10;
 }

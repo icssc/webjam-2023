@@ -9,7 +9,7 @@
 }
 
 .dolphin {
-  background-image: url("/assets/img/graphics/layer1/Dolphin.svg");
+  background-image: url("/assets/img/graphics/layer2/MiddleDolphin.svg");
   height: 100%;
   margin-top: 90px;
   z-index: 0;
@@ -18,48 +18,6 @@
   background-position: top;
   animation: MoveUpDown 5s ease-in-out infinite;
   animation-delay: 1s;
-}
-
-.anteater {
-  background-image: url("/assets/img/graphics/layer1/ScubaAnteater.svg");
-  height: 100%;
-  margin-top: 90px;
-  z-index: 0;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
-  animation: MoveUpDown 5s ease-in-out infinite;
-  animation-delay: 1s;
-}
-
-.pufferfish {
-  background-image: url("/assets/img/graphics/layer1/PufferFish.svg");
-  height: 100%;
-  z-index: 1;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  animation: MoveUpDown 5s ease-in-out infinite;
-}
-
-.fishies {
-  background-image: url("/assets/img/graphics/layer1/Fishies.svg");
-  height: 100%;
-  z-index: 1;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  animation: MoveUpDown 5s ease-in-out infinite;
-  animation-delay: 1s;
-}
-
-.oceanTopFloor {
-  background-image: url("/assets/img/graphics/layer1/OceanTopFloor.svg");
-  height: 857px;
-  background-size: contain;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  z-index: 0;
 }
 
 @keyframes MoveUpDown {

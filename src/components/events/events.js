@@ -1,6 +1,7 @@
 import { FaExternalLinkAlt } from "react-icons/fa";
 import EventsData from "../../../assets/events.json";
 import { useEffect, useState } from "react";
+import styles from "../../styles/components/Events.module.css";
 
 function getFormattedDate(date) {
   const dateObject = new Date(date + "T00:00:00").toLocaleDateString("en-US", {
@@ -31,12 +32,10 @@ export default function EventsSection() {
     // Sort the events by time here
     const sortedEvents = Object.values(sortedSchedule).map((date) =>
       date.sort((a, b) => {
-        const timeA =
-          parseInt(a.time, 10) + (a.time.includes("PM") ? 12 : 0);
-        const timeB =
-          parseInt(b.time, 10) + (b.time.includes("PM") ? 12 : 0);
+        const timeA = parseInt(a.time, 10) + (a.time.includes("PM") ? 12 : 0);
+        const timeB = parseInt(b.time, 10) + (b.time.includes("PM") ? 12 : 0);
         return timeA - timeB;
-      })
+      }),
     );
 
     setSortedSchedule(sortedEvents);
@@ -44,7 +43,7 @@ export default function EventsSection() {
 
   return (
     <>
-      <div className="mx-8 my-10 flex min-w-[80%] flex-col gap-2 md:mx-[10%] md:gap-4 xl:mx-[20%] xl:min-w-[60%]">
+      <div className="z-50 mx-8 my-10 flex min-w-[80%] flex-col gap-2 pb-40 md:mx-[10%] md:gap-4 xl:mx-[20%] xl:min-w-[60%]">
         <div className="flex place-content-start text-5xl md:text-6xl">
           Schedule
         </div>
@@ -54,7 +53,7 @@ export default function EventsSection() {
             className="mb-2 flex flex-col md:mb-6 lg:gap-6"
             key={date[0].date}
           >
-            <div className="flex w-[100%] border-b-4 border-dashed border-gray-800 text-3xl text-slate-600 md:mb-2 md:border-dashed lg:text-4xl mb-3">
+            <div className="border-white-800 text-white-600 mb-3 flex w-[100%] border-b-4 border-dashed text-3xl md:mb-2 md:border-dashed lg:text-4xl">
               {getFormattedDate(date[0].date)}
             </div>
 
@@ -78,7 +77,9 @@ export default function EventsSection() {
                         {event.title}
                       </div>
                       <div className="text-lg md:text-xl">
-                        {`${event.time} • ${event.club && event.club + " • " } ${event.location}`}
+                        {`${event.time} • ${event.club && event.club + " • "} ${
+                          event.location
+                        }`}
                       </div>
                     </div>
 
@@ -119,6 +120,16 @@ export default function EventsSection() {
           </div>
         ))}
       </div>
+
+      <div
+        className={`${styles.middleBottom} absolute bottom-0 left-0 z-30 w-[100%]`}
+      />
+      <div
+        className={`${styles.bubbles} absolute bottom-[80rem] z-30 hidden h-[150px] w-[100%] md:left-[55vw] md:flex lg:left-[70vw]`}
+      />
+      <div
+        className={`${styles.eel} absolute bottom-[10rem] right-4 w-[25vw] md:bottom-[30rem] lg:w-[40vw]`}
+      />
     </>
   );
 }
