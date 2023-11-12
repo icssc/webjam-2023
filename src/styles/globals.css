@@ -26,7 +26,7 @@ main {
 }
 
 #about {
-  background: linear-gradient(180deg, #3db2ff, #0f6aa6);
+  background: linear-gradient(180deg, #59bdff, #1e83c6);
   padding-top: 70px;
   margin-top: -2px;
   color: black;
@@ -35,7 +35,7 @@ main {
 }
 
 #events {
-  background: linear-gradient(180deg, #0f6aa6, #07395b);
+  background: linear-gradient(180deg, #1e83c6, #07395b);
   padding-top: 70px;
   margin-top: -2px;
   color: white;
