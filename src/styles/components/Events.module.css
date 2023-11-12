@@ -24,7 +24,7 @@
 .bubbles {
   background-image: url("/assets/img/graphics/layer1/RandomBubbles.svg");
   margin-top: 90px;
-  width: 350px;
+  width: 300px;
   z-index: 0;
   background-size: contain;
   background-repeat: no-repeat;
