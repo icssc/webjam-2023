@@ -35,7 +35,7 @@ main {
 }
 
 #events {
-  background: linear-gradient(180deg, #0f6aa6, #0c507e);
+  background: linear-gradient(180deg, #0f6aa6, #07395b);
   padding-top: 70px;
   margin-top: -2px;
   color: white;
@@ -43,12 +43,20 @@ main {
   z-index: 10;
 }
 
-#faq,
-#footer {
+#faq {
+  background: linear-gradient(180deg, #07395b, #05273d);
   padding-top: 70px;
   margin-top: -2px;
-  color: black;
-  background: #f0fc97;
+  color: white;
+  position: relative;
+  z-index: 10;
+}
+
+#footer {
+  background: linear-gradient(180deg, #05273d, #05273d);
+  padding-top: 70px;
+  margin-top: -2px;
+  color: white;
   position: relative;
   z-index: 10;
 }

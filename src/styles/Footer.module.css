@@ -1,0 +1,18 @@
+/* Graphics */
+
+.bottomFloor {
+  background-image: url("/assets/img/graphics/layer3/BottomLayerFloor.svg");
+  height: 800px;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.treasure {
+  background-image: url("/assets/img/graphics/layer3/BottomTreasure.svg");
+  z-index: 10;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
