@@ -60,7 +60,7 @@ export default function EventsSection() {
 
             {date.map((event) => (
               <div
-                className="flex w-[100%] flex-col lg:flex-row lg:items-center lg:justify-between lg:gap-0"
+                className="flex w-[100%] flex-col lg:flex-row lg:items-center lg:justify-between lg:gap-0 pt-4 pb-8"
                 key={event.title + event.time}
               >
                 <div className="mb-6 flex items-start gap-6 align-top lg:h-[100%]">
@@ -74,7 +74,7 @@ export default function EventsSection() {
 
                   <div className="flex flex-col gap-4">
                     <div>
-                      <div className="flex text-3xl md:w-[28rem] md:text-4xl lg:w-[20rem] xl:w-[28rem]">
+                      <div className="flex text-3xl md:w-[28rem] md:text-4xl lg:w-[20rem] xl:w-[22rem]">
                         {event.title}
                       </div>
                       <div className="text-lg md:text-xl">
