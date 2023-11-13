@@ -134,7 +134,7 @@ export default function EventsSection() {
         className={`${styles.bubbles} absolute bottom-[80rem] z-30 hidden h-[150px] w-[100%] md:left-[55vw] md:flex lg:left-[70vw]`}
       />
       <div
-        className={`${styles.eel} absolute bottom-10 right-4 w-[25vw] md:bottom-32 lg:w-[40vw]`}
+        className={`${styles.eel} absolute bottom-0 right-4 w-[40vw] md:bottom-28`}
       />
     </>
   );
