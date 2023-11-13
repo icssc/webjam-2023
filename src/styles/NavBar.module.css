@@ -69,3 +69,7 @@
   width: 100%; 
   left: 0;
 }
+
+.whiteText {
+  color: white;
+}

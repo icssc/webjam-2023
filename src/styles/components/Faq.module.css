@@ -1,3 +1,34 @@
+.bottomCeiling {
+  background-image: url("/assets/img/graphics/layer3/BottomLayerCeiling.svg");
+  height: 800px;
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.anglerfish {
+  background-image: url("/assets/img/graphics/layer3/BottomAngler.svg");
+  height: 300px;
+  margin-top: 90px;
+  z-index: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  animation: MoveUpDown 5s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(2%);
+  }
+}
+
 /* 
 CSS Accordion by Raul Barrera 
 https://codepen.io/raubaca/pen/PZzpVe
@@ -58,7 +89,6 @@ https://codepen.io/raubaca/pen/PZzpVe
   background-color: aliceblue;
 }
 
-
 .tab__content a {
   text-decoration: underline;
 }
@@ -69,15 +99,14 @@ https://codepen.io/raubaca/pen/PZzpVe
   font-size: 0.75rem;
 }
 
-
 .tab input:not(:checked) + .tab__label:hover::after {
-  animation: bounce .5s infinite;
+  animation: bounce 0.5s infinite;
 }
 @keyframes bounce {
   25% {
-    transform: rotate(90deg) translate(.25rem);
+    transform: rotate(90deg) translate(0.25rem);
   }
   75% {
-    transform: rotate(90deg) translate(-.25rem);
+    transform: rotate(90deg) translate(-0.25rem);
   }
 }
