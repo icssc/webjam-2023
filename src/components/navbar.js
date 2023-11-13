@@ -3,6 +3,8 @@ import styles from "../styles/NavBar.module.css";
 
 export default function Navbar() {
   const [showNav, setShowNav] = useState(true);
+  const [whiteText, setWhiteText] = useState(false);
+
   useEffect(() => {
     let prevScrollPos = window.pageYOffset;
 
@@ -11,6 +13,14 @@ export default function Navbar() {
       const scrollingUp = prevScrollPos > currentScrollPos;
 
       setShowNav(scrollingUp);
+
+      // Check if the user has scrolled past the "About" section
+      const aboutSection = document.getElementById("about");
+      if (aboutSection) {
+        const aboutSectionPos = aboutSection.offsetTop;
+        setWhiteText(currentScrollPos > aboutSectionPos);
+      }
+
       prevScrollPos = currentScrollPos;
     };
 
@@ -22,7 +32,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`${styles.nav} ${showNav ? "opacity-100" : "opacity-0"} place-content-center md:pl-[4rem] md:place-content-start`}>
+    <nav className={`${styles.nav} ${showNav ? "opacity-100" : "opacity-0"} place-content-center md:pl-[4rem] md:place-content-start ${whiteText ? styles.whiteText : ""}`}>
       <ul>
         <a href="#">
           <img src="/webjam_logo.png" alt="WebJam 2023 Logo" />

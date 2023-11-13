@@ -54,7 +54,7 @@
 .oceanTopFloor {
   background-image: url("/assets/img/graphics/layer1/OceanTopFloor.svg");
   height: 857px;
-  background-size: contain;
+  background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
   z-index: 0;

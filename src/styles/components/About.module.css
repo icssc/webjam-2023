@@ -2,7 +2,7 @@
 .middleTop {
   background-image: url("/assets/img/graphics/layer2/MiddleLayerCeiling.svg");
   height: 800px;
-  background-size: contain;
+  background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   z-index: 0;

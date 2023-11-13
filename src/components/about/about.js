@@ -3,7 +3,7 @@ import styles from "../../styles/components/About.module.css";
 export default function AboutSection() {
   return (
     <>
-      <div className="z-50 mx-[10%] flex flex-col items-center gap-4 pt-[10%] md:mx-[20%]">
+      <div className="z-50 mx-[10%] flex flex-col items-center gap-4 pt-[70%] md:pt-[10%] md:mx-[20%]">
         <div className="text-center text-4xl md:text-7xl">About WebJam</div>
         <div className="text-center text-xl font-light sm:text-2xl md:text-2xl md:leading-relaxed lg:text-start">
           <p>
@@ -27,7 +27,7 @@ export default function AboutSection() {
         className={`${styles.middleTop} absolute left-0 top-0 z-30 w-[100%]`}
       />
       <div
-        className={`${styles.dolphin} absolute bottom-[-45vw] left-[-15vw] w-[50vw] lg:bottom-[-22vw] lg:left-[-7.5vw] lg:w-[30vw]`}
+        className={`${styles.dolphin} absolute bottom-[-45vw] left-[-15vw] w-[80vw] lg:bottom-[-22vw] lg:left-[-7.5vw] lg:w-[30vw]`}
         // style={{ top: -scrollValue * 0.45 - 50 + "px" }}
       />
     </>
