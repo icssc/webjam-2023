@@ -15,7 +15,7 @@ export default function Navbar() {
       setShowNav(scrollingUp);
 
       // Check if the user has scrolled past the "About" section
-      const aboutSection = document.getElementById("about");
+      const aboutSection = document.getElementById("events");
       if (aboutSection) {
         const aboutSectionPos = aboutSection.offsetTop;
         setWhiteText(currentScrollPos > aboutSectionPos);
