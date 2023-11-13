@@ -74,7 +74,7 @@ export default function EventsSection() {
 
                   <div className="flex flex-col gap-4">
                     <div>
-                      <div className="flex text-3xl md:w-[28rem] md:text-4xl lg:w-[20rem] xl:w-[28rem]">
+                      <div className="flex text-3xl md:w-[28rem] md:text-4xl lg:w-[20rem] xl:w-[22rem]">
                         {event.title}
                       </div>
                       <div className="text-lg md:text-xl">
