@@ -9,6 +9,27 @@
   z-index: 0;
 }
 
+.middleTop {
+  background-image: url("/assets/img/graphics/layer2/MiddleLayerCeiling.svg");
+  height: 800px;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.dolphin {
+  background-image: url("/assets/img/graphics/layer2/MiddleDolphin.svg");
+  height: 100%;
+  margin-top: 90px;
+  z-index: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  animation: MoveUpDown 5s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
 .eel {
   background-image: url("/assets/img/graphics/layer2/MiddleEel.svg");
   height: 300px;
