@@ -128,7 +128,7 @@ export default function EventsSection() {
         className={`${styles.middleBottom} absolute bottom-0 left-0 z-30 w-[100%]`}
       />
       <div
-        className={`${styles.dolphin} absolute right-1 top-32 w-[55vw] md:w-[45vw] lg:top-64 xl:left-[-7.5vw] xl:w-[30vw]`}
+        className={`${styles.dolphin} absolute right-1 top-32 w-[55vw] md:w-[45vw] lg:top-32 xl:left-[-7.5vw] xl:top-64 xl:w-[30vw]`}
       />
       <div
         className={`${styles.bubbles} absolute bottom-[80rem] z-30 hidden h-[150px] w-[100%] md:left-[55vw] md:flex lg:left-[70vw]`}
