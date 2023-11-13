@@ -3,7 +3,7 @@ import styles from "../../styles/components/About.module.css";
 export default function AboutSection() {
   return (
     <>
-      <div className="z-50 mx-[10%] flex flex-col items-center gap-4 pt-[70%] md:pt-[10%] md:mx-[20%]">
+      <div className="z-50 mx-[10%] flex flex-col items-center gap-4 pb-24 md:mx-[20%] md:pb-36 md:pt-24">
         <div className="text-center text-4xl md:text-7xl">About WebJam</div>
         <div className="text-center text-xl font-light sm:text-2xl md:text-2xl md:leading-relaxed lg:text-start">
           <p>
