@@ -41,9 +41,23 @@ export default function EventsSection() {
     setSortedSchedule(sortedEvents);
   }, []);
 
+  const [scrollValue, setScrollValue] = useState(0);
+
+  useEffect(() => {
+    function handleScroll() {
+      setScrollValue(window.scrollY);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <>
-      <div className="z-50 mx-8 my-10 flex min-w-[80%] flex-col gap-2 pb-96 pt-64 md:mx-[10%] md:gap-4 xl:mx-[20%] xl:min-w-[60%]">
+    <div>
+      <div className="mx-8 my-10 flex min-w-[80%] flex-col gap-2 pb-96 pt-64 md:mx-[10%] md:gap-4 xl:mx-[20%] xl:min-w-[60%] relative pb-[1000px]" style={{ top: scrollValue * 0.2 - 400 + "px" }}>
         <div className="flex place-content-start text-5xl md:text-6xl">
           Schedule
         </div>
@@ -122,7 +136,7 @@ export default function EventsSection() {
       </div>
 
       <div
-        className={`${styles.middleTop} absolute left-0 top-0 z-30 w-[100%]`}
+        className={`${styles.middleTop} absolute left-0 top-0 z-51 w-[100%]`}
       />
       <div
         className={`${styles.middleBottom} absolute bottom-0 left-0 z-30 w-[100%]`}
@@ -131,11 +145,12 @@ export default function EventsSection() {
         className={`${styles.dolphin} absolute right-1 top-32 w-[55vw] md:w-[45vw] lg:top-32 xl:left-[-7.5vw] xl:top-64 xl:w-[30vw]`}
       />
       <div
-        className={`${styles.bubbles} absolute bottom-[80rem] z-30 hidden h-[150px] w-[100%] md:left-[55vw] md:flex lg:left-[70vw]`}
+        className={`${styles.bubbles} absolute bottom-[80rem] z-1 hidden h-[150px] w-[100%] md:left-[55vw] md:flex lg:left-[80vw]`}
+        style={{ bot: scrollValue *  + "px" }}
       />
       <div
         className={`${styles.eel} absolute bottom-0 right-4 w-[40vw] md:bottom-28`}
       />
-    </>
+    </div>
   );
 }
