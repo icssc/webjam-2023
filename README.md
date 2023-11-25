@@ -6,4 +6,4 @@
 <img width="1728" alt="Footer" src="https://github.com/icssc/webjam-2023/assets/100006999/68ead083-d5f6-42e7-b7d6-d3e471433dfa">
 
 ------------------------
-Created with 💖 by Avent Chiu and Kevin Wu, graphics by Alaina Klaes
+Created with 💖 by Avent Chiu and Kevin Wu, wonderful graphics ✨ by Alaina Klaes
