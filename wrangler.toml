@@ -1,0 +1,11 @@
+name = "webjam-2023"
+
+compatibility_date = "2024-09-23"
+
+assets = { directory = "out" }
+
+workers_dev = false
+routes = [
+  { pattern = "webjam-2023.icssc.club", custom_domain = true },
+  { pattern = "2023.webjam.icssc.club", custom_domain = true },
+]
